@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Connect Wallet - Test</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav container">
+        <a href="https://github.com/danielbarrosdeoliveira" target="_blank">
+          <img
+            src="./assets/logo-light.png"
+            alt="Logo Daniel Oliveira"
+            class="logo-daniel"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main container">
+      <section class="user">
+        <div id="info-user" class="user__info">
+          <span>Clique em Connect Wallet para mostrar os dados...</span>
+        </div>
+      </section>
+      <button id="connect-wallet" class="button">
+        Connect Wallet
+        <i class="bi bi-wallet"></i>
+      </button>
+      <button id="invokeScript" class="button">invokeScript</button>
+    </main>
+    <footer class="footer">
+      <p>
+        <span id="actual-year"></span>
+        &nbsp;-&nbsp;
+        <a href="https://github.com/danielbarrosdeoliveira" target="_blank">
+          Daniel Oliveira
+        </a>
+      </p>
+    </footer>
+    <script type="module" src="./dist/main.js"></script>
+  </body>
+</html>

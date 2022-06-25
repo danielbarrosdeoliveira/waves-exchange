@@ -1,0 +1,156 @@
+:root {
+  --background: #222222;
+  --white: #e8e8e8;
+  --blue-100: #127296;
+  --blue-200: #1e41d6;
+  --blue-500: #172e8a;
+  --blue-800: #040f3d;
+  --gray-700: #617a69;
+  --gray-500: #758173;
+  --red: #bf1304;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.error {
+  color: var(--red);
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background: var(--background);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.header__nav span {
+  font-size: 2rem;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.header__nav ul li a {
+  color: var(--white);
+}
+
+.header__nav ul li a:hover {
+  color: var(--blue-100);
+  transition: color 0.4s;
+}
+
+.logo-daniel {
+  width: 42px;
+  height: 42px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main .user {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.main .user .user__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main .user .user__info p {
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.main .user .user__info p span {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.main .button {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  background-color: var(--blue-100);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  height: 2.5rem;
+  margin: 2rem auto 0 auto;
+  padding: 0 1.5rem;
+  transition: filter 0.4s;
+}
+
+.main .button:hover {
+  filter: opacity(0.7);
+  cursor: pointer;
+}
+
+.main .button i {
+  margin-left: 1rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 4rem;
+  background: var(--background);
+  width: 100%;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+}
+
+.footer a {
+  color: var(--white);
+  transition: filter 0.4s;
+}
+
+.footer a:hover {
+  filter: opacity(0.7);
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+}
